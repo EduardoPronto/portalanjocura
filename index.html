@@ -3,544 +3,371 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EiMultas | Especialistas em Recursos de Multas de Trânsito</title>
-  <meta name="description" content="A EiMultas é especialista em recursos de multas de trânsito. Reduza ou elimine suas multas com quem realmente entende da lei." />
-  <meta name="theme-color" content="#ffffff" />
-  <link rel="icon" href="assets/favicon.png" />
+  <title>Portal Anjo-Cura | Psicoterapia e Terapias Holísticas</title>
+  <meta name="description" content="Acolhimento psicoterapêutico e equilíbrio holístico sob a luz dos anjos. Psicoterapia, terapias holísticas, mesas radiônicas e equilíbrio energético." />
+  <meta name="theme-color" content="#a9cdf0" />
+  <link rel="canonical" href="https://www.portalanjocura.com.br/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Portal Anjo-Cura" />
+  <meta property="og:title" content="Portal Anjo-Cura | Psicoterapia e Terapias Holísticas" />
+  <meta property="og:description" content="Acolhimento psicoterapêutico e equilíbrio holístico sob a luz dos anjos." />
+  <meta property="og:url" content="https://www.portalanjocura.com.br/" />
+  <meta property="og:image" content="https://www.portalanjocura.com.br/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* --- FORÇANDO O TEMA CLARO (SOBREPONDO O STYLES.CSS) --- */
-    
-    body, html {
-      background-color: #ffffff !important;
-      background-image: none !important;
-      color: #07192e !important;
-    }
+  <script>document.documentElement.classList.add('js');</script>
 
-    /* Esconder os efeitos de luz/gradiente do fundo escuro */
-    .bg-orb {
-      display: none !important;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Portal Anjo-Cura",
+    "slogan": "Acolhimento psicoterapêutico e equilíbrio holístico sob a luz dos anjos.",
+    "url": "https://www.portalanjocura.com.br/",
+    "logo": "https://www.portalanjocura.com.br/assets/icon-192.png",
+    "image": "https://www.portalanjocura.com.br/assets/anjo.jpg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-49-92008-6541",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese"
     }
-
-    /* Cabeçalho */
-    .site-header {
-      background-color: #ffffff !important;
-      background-image: none !important;
-      border-bottom: 1px solid #e2eaf3 !important;
-    }
-    .nav-links a {
-      color: #07192e !important;
-    }
-
-    /* Seção Hero */
-    .hero {
-      background-color: #ffffff !important;
-      background-image: none !important;
-    }
-    .eyebrow {
-      color: #8a9ab0 !important;
-    }
-    .hero-copy h1 {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(2.6rem, 5vw, 4.2rem);
-      font-weight: 800;
-      line-height: 1.07;
-      letter-spacing: -.025em;
-      color: #07192e !important;
-      margin-bottom: 20px;
-    }
-    .hero-copy h1 em {
-      font-style: normal;
-      color: #f5820a !important; 
-    }
-    .hero-copy .lead {
-      color: #555555 !important;
-    }
-
-    /* Itens de prova (os bloquinhos abaixo dos botões) */
-    .hero-proof {
-      background: transparent !important;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .proof-item {
-      background: #f4f6f9 !important;
-      border: 1px solid #e2eaf3 !important;
-      border-radius: 12px;
-      padding: 12px 16px;
-      display: flex; align-items: center; gap: 12px;
-    }
-    .proof-icon {
-      width: 36px; height: 36px; border-radius: 50%;
-      background: #e2eaf3 !important;
-      color: #07192e !important;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1rem; flex-shrink: 0;
-    }
-    .proof-item strong { display: block; color: #07192e !important; font-size: .88rem; font-weight: 600; }
-    .proof-item span   { color: #555555 !important; font-size: .78rem; }
-
-    /* Card flutuante (Estatísticas no Hero) */
-    .glass-panel {
-      background: #ffffff !important;
-      border: 1px solid #e2eaf3 !important;
-      box-shadow: 0 12px 40px rgba(11,46,80,.08) !important;
-    }
-    .stat-header, .mini-card span, .mini-card strong {
-      color: #07192e !important;
-    }
-    .stat-caption {
-      color: #555555 !important;
-    }
-
-    /* Faixa de logos/textos */
-    .logos-strip {
-      background: #f4f6f9 !important;
-      border-top: 1px solid #e2eaf3 !important;
-      border-bottom: 1px solid #e2eaf3 !important;
-    }
-    .logos-strip span {
-      color: #555555 !important;
-    }
-
-    /* Seções Gerais */
-    .section, .section-navy, .section-dark, .section-alt {
-      background-color: #ffffff !important;
-      background-image: none !important;
-      color: #07192e !important;
-    }
-    .section-head h2 {
-      color: #07192e !important;
-    }
-    .section-head p {
-      color: #555555 !important;
-    }
-
-    /* Cards gerais (Vantagens, Compliance, etc) */
-    .card, .step {
-      background: #ffffff !important;
-      border: 1px solid #e2eaf3 !important;
-      color: #07192e !important;
-    }
-    .card h3, .step h3 { color: #07192e !important; }
-    .card p, .step p { color: #555555 !important; }
-
-    /* Linha de números */
-    .stats-row {
-      display: grid; grid-template-columns: repeat(3,1fr);
-      gap: 1px; background: #e2eaf3 !important;
-      border-radius: 16px; overflow: hidden;
-      border: 1px solid #e2eaf3;
-    }
-    .stat-block { background: #ffffff !important; padding: 48px 32px; text-align: center; }
-    .stat-value {
-      font-size: 3.4rem; font-weight: 800; line-height: 1;
-      color: #f5820a !important; margin-bottom: 8px;
-    }
-    .stat-label { color: #555555 !important; font-size: .9rem; }
-
-    /* Grid de Recursos */
-    .recursos-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
-    .recurso-card {
-      background: #ffffff !important; border: 1.5px solid #e2eaf3 !important;
-      border-radius: 14px; padding: 28px 24px; transition: all .25s;
-    }
-    .recurso-card:hover { border-color: #1a78c2 !important; transform: translateY(-4px); box-shadow: 0 12px 40px rgba(11,46,80,.12); }
-    .recurso-icon {
-      width: 48px; height: 48px; border-radius: 12px;
-      background: linear-gradient(135deg,#0b4f8a,#1a78c2) !important;
-      display: flex; align-items: center; justify-content: center;
-      color: #fff !important;
-      font-size: 1.3rem; margin-bottom: 16px;
-    }
-    .recurso-card h3 { font-size: 1rem; font-weight: 700; color: #07192e !important; margin-bottom: 8px; }
-    .recurso-card p  { font-size: .875rem; color: #555555 !important; line-height: 1.6; }
-
-    /* --- FAQ (100% LIMPO DE DEGRADÊS E SOMBRAS) --- */
-    .faq-list { 
-      max-width: 720px; 
-      margin: 0 auto; 
-      background: transparent !important;
-      box-shadow: none !important;
-    }
-    .faq-item { 
-      background-color: #ffffff !important; 
-      background-image: none !important; /* Remove o degradê chato */
-      border: none !important;
-      border-bottom: 1px solid #e2eaf3 !important; 
-      box-shadow: none !important;       /* Remove a sombra cinza */
-      margin: 0 !important;
-      border-radius: 0 !important;
-    }
-    .faq-btn {
-      width: 100%; 
-      background: transparent !important; 
-      background-image: none !important;
-      border: none !important; 
-      box-shadow: none !important;
-      cursor: pointer;
-      text-align: left; 
-      padding: 24px !important; /* Espaçamento interno garantido */
-      display: flex; justify-content: space-between; align-items: center;
-      font-family: 'Inter', sans-serif; font-size: .95rem; font-weight: 600;
-      color: #07192e !important; gap: 16px; transition: color .2s;
-    }
-    .faq-btn:hover { color: #0b4f8a !important; }
-    .faq-arrow {
-      width: 26px; height: 26px; border-radius: 50%; 
-      background: #f4f6f9 !important;
-      display: flex; align-items: center; justify-content: center;
-      font-size: .7rem; flex-shrink: 0; transition: transform .3s, background .2s;
-      box-shadow: none !important;
-    }
-    .faq-item.open .faq-arrow { transform: rotate(180deg); background: #f5820a !important; color: #fff !important; }
-    .faq-body { 
-      max-height: 0; overflow: hidden; transition: max-height .38s ease; 
-      background: #ffffff !important;
-      background-image: none !important;
-    }
-    .faq-item.open .faq-body { max-height: 260px; }
-    .faq-body p { 
-      padding: 0 24px 24px 24px !important; /* Respiro no texto da resposta */
-      color: #555555 !important; font-size: .9rem; line-height: 1.7; 
-      margin: 0 !important;
-    }
-
-    /* CTA Final */
-    .cta-final {
-      background: #ffffff !important;
-      padding: 96px 0; text-align: center; position: relative; overflow: hidden;
-      border-top: 1px solid #e2eaf3 !important;
-    }
-    .cta-final::before { display: none !important; }
-    .cta-final h2 {
-      font-size: clamp(1.9rem, 3.5vw, 3rem); font-weight: 800;
-      color: #07192e !important; line-height: 1.15; letter-spacing: -.02em; margin-bottom: 16px;
-    }
-    .cta-final p { color: #555555 !important; font-size: 1rem; max-width: 500px; margin: 0 auto 36px; }
-    .cta-final-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-    .cta-phone {
-      display: inline-flex; align-items: center; gap: 8px; margin-top: 24px;
-      background: #f4f6f9 !important; border: 1px solid #e2eaf3 !important;
-      border-radius: 50px; padding: 10px 22px;
-      color: #07192e !important; font-weight: 600; font-size: .95rem;
-      text-decoration: none; transition: background .2s;
-    }
-    .cta-phone:hover { background: #e2eaf3 !important; }
-
-    /* Footer */
-    .site-footer {
-      background: #f8fafc !important;
-      color: #07192e !important;
-      border-top: 1px solid #e2eaf3 !important;
-      padding: 40px 0;
-    }
-    .site-footer p, .site-footer a { color: #555555 !important; }
-    .site-footer h4 { color: #07192e !important; margin-bottom: 16px; }
-
-    /* WhatsApp Float */
-    .whatsapp-float {
-      position: fixed; bottom: 26px; right: 26px; z-index: 99;
-      background: #25D366 !important; color: #fff !important;
-      border-radius: 50px; padding: 13px 22px;
-      font-weight: 700; font-size: .9rem; text-decoration: none;
-      display: flex; align-items: center; gap: 8px;
-      box-shadow: 0 6px 26px rgba(37,211,102,.45);
-      transition: transform .22s, box-shadow .22s;
-      animation: popIn .5s ease 1.4s both;
-    }
-    @keyframes popIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
-    .whatsapp-float:hover { transform: translateY(-3px); box-shadow: 0 10px 34px rgba(37,211,102,.55); }
-
-    /* Responsividade */
-    @media (max-width: 860px) {
-      .recursos-grid { grid-template-columns: 1fr 1fr; }
-      .stats-row     { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 560px) { 
-      .recursos-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  }
+  </script>
 </head>
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
+  <!-- Ícones reutilizáveis -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C12.6 6.6 17.4 11.4 24 12 17.4 12.6 12.6 17.4 12 24 11.4 17.4 6.6 12.6 0 12 6.6 11.4 11.4 6.6 12 0Z"/></symbol>
+    <symbol id="i-psico" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M12 15.2s-3.4-2-3.4-4.3a1.8 1.8 0 0 1 3.4-.9 1.8 1.8 0 0 1 3.4.9c0 2.3-3.4 4.3-3.4 4.3z"/></g></symbol>
+    <symbol id="i-lotus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5c1.9 2 2.9 4.3 2.9 6.8S13.8 16 12 17.5c-1.8-1.5-2.9-3.7-2.9-6.2S10.1 6.5 12 4.5z"/><path d="M12 17.5c-3.4 0-6.6-1.9-8-5.3 2.5-.6 5 .2 6.7 1.9"/><path d="M12 17.5c3.4 0 6.6-1.9 8-5.3-2.5-.6-5 .2-6.7 1.9"/><path d="M4.5 20.5h15"/></g></symbol>
+    <symbol id="i-sunrise" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17a7 7 0 0 1 14 0"/><path d="M2.5 17h19"/><path d="M12 3.5v3"/><path d="M5.3 7.3l1.8 1.8"/><path d="M18.7 7.3l-1.8 1.8"/><path d="M7.5 20.5h9"/></g></symbol>
+    <symbol id="i-stars" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M11 3l1.7 4.6 4.6 1.7-4.6 1.7L11 15.6 9.3 11 4.7 9.3 9.3 7.6z"/><path d="M18 14l.8 2.2 2.2.8-2.2.8L18 20l-.8-2.2-2.2-.8 2.2-.8z"/></g></symbol>
+    <symbol id="i-radionic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5V6"/><path d="M12 6l1.4 1.5L12 9l-1.4-1.5z"/><circle cx="12" cy="15" r="6"/><circle cx="12" cy="15" r="2.2"/><path d="M12 9v3.8M12 17.2V21M6 15h3.8M14.2 15H18" opacity=".6"/></g></symbol>
+    <symbol id="i-infinity" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8.5c-2 0-3.5 1.6-3.5 3.5S6 15.5 8 15.5c3.5 0 4.5-7 8-7 2 0 3.5 1.6 3.5 3.5S18 15.5 16 15.5c-3.5 0-4.5-7-8-7z"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></g></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="EiMultas">
-        <img src="assets/logo.png" alt="Logo EiMultas" />
+      <a class="brand" href="#inicio" aria-label="Portal Anjo-Cura — início">
+        <span class="avatar avatar-sm"><img src="assets/anjo-avatar.jpg" alt="" width="52" height="52" /></span>
+        <span class="brand-text">
+          <strong>Portal Anjo-Cura</strong>
+          <small>Psicoterapia · Terapias Holísticas</small>
+        </span>
       </a>
-      <nav class="nav-links">
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#recursos">Tipos de recursos</a>
-        <a href="#vantagens">Vantagens</a>
-        <a href="#faq">Dúvidas</a>
-        <a href="pages/politica-de-privacidade.html">Privacidade</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu" class="nav-links" aria-label="Menu principal">
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#atendimentos">Atendimentos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#mensagem">Mensagem do dia</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="btn btn-gold btn-sm" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20atendimento%20no%20Portal%20Anjo-Cura." target="_blank" rel="noopener">Agendar</a>
       </nav>
-      <a class="btn btn-header" href="https://wa.me/554935181609?text=Olá%2C+quero+entender+como+a+EiMultas+pode+me+ajudar." target="_blank" rel="noopener">
-        Falar no WhatsApp
-      </a>
     </div>
   </header>
 
-  <main>
+  <main id="conteudo">
 
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="sky" aria-hidden="true">
+        <div class="sky-rays"></div>
+        <svg class="sparkle" style="--x:7%;--y:24%;--s:16px;--d:.2s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:14%;--y:62%;--s:10px;--d:1.4s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:26%;--y:14%;--s:12px;--d:2.1s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:42%;--y:30%;--s:9px;--d:.8s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:48%;--y:78%;--s:14px;--d:2.6s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:57%;--y:12%;--s:18px;--d:1.1s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:88%;--y:18%;--s:12px;--d:.5s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:94%;--y:52%;--s:16px;--d:1.8s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:80%;--y:84%;--s:10px;--d:3s"><use href="#i-sparkle"/></svg>
+        <svg class="sparkle" style="--x:34%;--y:88%;--s:11px;--d:2.3s"><use href="#i-sparkle"/></svg>
+        <div class="clouds">
+          <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+          <span class="cloud c4"></span><span class="cloud c5"></span><span class="cloud c6"></span>
+          <span class="cloud c7"></span>
+        </div>
+      </div>
+
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="eyebrow">ESPECIALISTAS EM RECURSOS DE MULTAS DE TRÂNSITO</span>
-          <h1>Sua multa pode ser <em>CANCELADA!</em></h1>
-          <p class="lead">
-            A EiMultas analisa cada infração com critério técnico e jurídico. Defendemos seus direitos com agilidade, seriedade e resultados reais.
-          </p>
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow-glass"><svg><use href="#i-sparkle"/></svg> Psicoterapia &amp; Terapias Holísticas</span>
+          <h1>Acolhimento psicoterapêutico e equilíbrio holístico <em>sob a luz dos anjos.</em></h1>
+          <p class="lead">Psicoterapia e terapia holística: a orientação dos anjos para o seu reencontro interior.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/554935181609?text=Olá%2C+quero+analisar+minha+multa+com+a+EiMultas." target="_blank" rel="noopener">
-              Falar no WhatsApp
+            <a class="btn btn-gold btn-lg" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20atendimento%20no%20Portal%20Anjo-Cura." target="_blank" rel="noopener">
+              <svg class="btn-icon"><use href="#i-whatsapp"/></svg> Agendar pelo WhatsApp
             </a>
-            <a class="btn btn-secondary" href="tel:+554935181609">(49) 3518-1609</a>
+            <a class="btn btn-glass btn-lg" href="#atendimentos">Conheça os atendimentos</a>
           </div>
-          <div class="hero-proof">
-            <div class="proof-item">
-              <div class="proof-icon">✅</div>
-              <div><strong>Análise gratuita</strong><span>avaliamos sua multa sem custo</span></div>
-            </div>
-            <div class="proof-item">
-              <div class="proof-icon">⚖️</div>
-              <div><strong>Base legal sólida</strong><span>fundamentação no CTB, CONTRAN, JusBrasil e Datajud</span></div>
-            </div>
-            <div class="proof-item">
-              <div class="proof-icon">⚡</div>
-              <div><strong>Prazo garantido</strong><span>atuamos dentro de todos os prazos legais</span></div>
-            </div>
-          </div>
+          <ul class="pillars" aria-label="Nosso cuidado integral">
+            <li><svg><use href="#i-sparkle"/></svg> Mente</li>
+            <li><svg><use href="#i-sparkle"/></svg> Corpo</li>
+            <li><svg><use href="#i-sparkle"/></svg> Alma</li>
+          </ul>
         </div>
 
-        <div class="hero-card reveal delay-1">
-          <div class="glass-panel">
-            <div class="stat-header">
-              <span class="dot"></span>
-              <span>Operação em andamento</span>
-            </div>
-            <div class="stat-number" data-counter="3200">0</div>
-            <div class="stat-caption">Recursos de multas elaborados com sucesso</div>
-            <div class="mini-grid">
-              <div class="mini-card"><span>Instâncias</span><strong>JARI / CETRAN</strong></div>
-              <div class="mini-card"><span>Postura</span><strong>Técnica e jurídica</strong></div>
-              <div class="mini-card"><span>Resultado</span><strong>87% de deferimento</strong></div>
-              <div class="mini-card"><span>Atendimento</span><strong>Direto e rápido</strong></div>
+        <div class="hero-art" data-tilt>
+          <div class="angel-3d">
+            <div class="angel-sway">
+              <div class="angel-glow" aria-hidden="true"></div>
+              <div class="orbit orbit-1" aria-hidden="true"><span class="orbit-dot"></span></div>
+              <div class="orbit orbit-2" aria-hidden="true"><span class="orbit-dot"></span></div>
+              <figure class="portal-frame">
+                <img src="assets/anjo.jpg" alt="Anjo feminino de asas brancas e auréola dourada, segurando uma flor branca entre nuvens e luz celestial, com o nome Portal Anjo Cura Terapias" width="955" height="955" fetchpriority="high" />
+              </figure>
+              <svg class="float-sparkle fs-1" aria-hidden="true"><use href="#i-sparkle"/></svg>
+              <svg class="float-sparkle fs-2" aria-hidden="true"><use href="#i-sparkle"/></svg>
+              <svg class="float-sparkle fs-3" aria-hidden="true"><use href="#i-sparkle"/></svg>
+              <p class="hero-quote">“Cuidado da mente, do corpo e da alma, com a luz protetora dos anjos ao seu lado.”</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="logos-strip reveal">
-      <div class="container strip">
-        <span>Defesa de Autuação</span>
-        <span>JARI</span>
-        <span>CETRAN</span>
-        <span>Suspensão de CNH</span>
-        <span>Radares</span>
-        <span>Frotas</span>
+    <!-- FAIXA -->
+    <section class="strip" aria-label="Nossas práticas">
+      <div class="marquee">
+        <div class="marquee-track">
+          <ul class="marquee-group">
+            <li>Psicoterapia</li><li aria-hidden="true"><svg><use href="#i-sparkle"/></svg></li>
+            <li>Terapias Holísticas Integrativas</li><li aria-hidden="true"><svg><use href="#i-sparkle"/></svg></li>
+            <li>Consultas Espirituais e Psicanálise</li><li aria-hidden="true"><svg><use href="#i-sparkle"/></svg></li>
+            <li>Mesas Radiônicas</li><li aria-hidden="true"><svg><use href="#i-sparkle"/></svg></li>
+            <li>Equilíbrio Energético</li><li aria-hidden="true"><svg><use href="#i-sparkle"/></svg></li>
+            <li>Transições de Vida</li><li aria-hidden="true"><svg><use href="#i-sparkle"/></svg></li>
+          </ul>
+          <ul class="marquee-group" aria-hidden="true">
+            <li>Psicoterapia</li><li><svg><use href="#i-sparkle"/></svg></li>
+            <li>Terapias Holísticas Integrativas</li><li><svg><use href="#i-sparkle"/></svg></li>
+            <li>Consultas Espirituais e Psicanálise</li><li><svg><use href="#i-sparkle"/></svg></li>
+            <li>Mesas Radiônicas</li><li><svg><use href="#i-sparkle"/></svg></li>
+            <li>Equilíbrio Energético</li><li><svg><use href="#i-sparkle"/></svg></li>
+            <li>Transições de Vida</li><li><svg><use href="#i-sparkle"/></svg></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="como-funciona" class="section">
+    <!-- SOBRE NÓS -->
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-art reveal">
+          <div class="portal-card">
+            <div class="portal-card-halo" aria-hidden="true"></div>
+            <svg class="portal-card-star" aria-hidden="true"><use href="#i-sparkle"/></svg>
+            <blockquote>Acreditamos que a cura acontece quando você se sente ouvido, seguro e conectado com sua própria essência.</blockquote>
+            <span class="portal-card-sign">Portal Anjo-Cura</span>
+            <div class="clouds clouds-small" aria-hidden="true">
+              <span class="cloud c1"></span><span class="cloud c3"></span><span class="cloud c5"></span><span class="cloud c6"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-copy reveal delay-1">
+          <span class="eyebrow"><svg><use href="#i-sparkle"/></svg> Sobre Nós</span>
+          <h2>Cada ser humano carrega uma <em>luz interior</em></h2>
+          <p>O Portal Anjo-Cura nasceu da crença de que cada ser humano carrega uma luz interior que pode ser reencontrada com acolhimento, cuidado psicológico e equilíbrio holístico.</p>
+          <p>Nós unimos o saber da psicoterapia às terapias integrativas, com a inspiração na presença gentil dos anjos como símbolo de proteção, orientação e esperança. Não trabalhamos com ritos religiosos, mas com a energia de acolhimento que essas figuras representam: escuta sem julgamento, respeito ao seu ritmo e atenção à mente, corpo e alma.</p>
+          <p>Nosso espaço existe para acompanhar você em momentos de ansiedade, dor, confusão ou busca por sentido, ajudando-o a recuperar a harmonia entre seus diferentes aspectos.</p>
+          <ul class="values">
+            <li><svg><use href="#i-sparkle"/></svg> Escuta sem julgamento</li>
+            <li><svg><use href="#i-sparkle"/></svg> Respeito ao seu ritmo</li>
+            <li><svg><use href="#i-sparkle"/></svg> Mente, corpo e alma</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATENDIMENTOS -->
+    <section class="section care" id="atendimentos">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">COMO FUNCIONA</span>
-          <h2>Do auto de infração ao recurso aprovado</h2>
-          <p>Processo simples, transparente e com acompanhamento em todas as etapas.</p>
+          <span class="eyebrow"><svg><use href="#i-sparkle"/></svg> Atendimentos</span>
+          <h2>Como cuidamos de <em>você</em></h2>
+          <p>Cuidado da mente, do corpo e da alma, com a luz protetora dos anjos ao seu lado.</p>
         </div>
-        <div class="steps">
-          <article class="step reveal">
-            <div class="step-number">01</div>
-            <h3>Envio da Multa</h3>
-            <p>Você nos envia o auto de infração pelo WhatsApp ou telefone. Em minutos iniciamos a análise.</p>
+
+        <div class="care-grid">
+          <article class="care-card reveal">
+            <div class="care-icon"><svg><use href="#i-psico"/></svg></div>
+            <h3>Psicoterapia</h3>
+            <p>Um espaço de escuta respeitosa para compreender suas emoções, padrões e dificuldades. Por meio do acompanhamento psicológico, você pode reconectar-se consigo mesmo, aliviar angústias e construir caminhos mais leves para o dia a dia. A inspiração angelical está presente como símbolo de proteção durante todo o seu percurso de autoconhecimento.</p>
+            <a class="care-link" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20a%20Psicoterapia." target="_blank" rel="noopener">Conversar sobre isso <svg><use href="#i-arrow"/></svg></a>
           </article>
-          <article class="step reveal delay-1">
-            <div class="step-number">02</div>
-            <h3>Análise Técnico-Jurídica</h3>
-            <p>Verificamos vícios formais, erros de medição e falhas no processo de autuação para identificar os melhores argumentos de defesa.</p>
+
+          <article class="care-card reveal delay-1">
+            <div class="care-icon"><svg><use href="#i-lotus"/></svg></div>
+            <h3>Terapias Holísticas Integrativas</h3>
+            <p>Cuidado que abrange mente, corpo e alma. As práticas holísticas auxiliam a restabelecer o equilíbrio energético, aliviar tensões e ampliar a percepção sobre o seu bem-estar. Elas complementam o trabalho psicoterapêutico, buscando a harmonia integral da pessoa, guiados pela simbologia da luz e da presença dos anjos.</p>
+            <a class="care-link" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20Terapias%20Hol%C3%ADsticas%20Integrativas." target="_blank" rel="noopener">Conversar sobre isso <svg><use href="#i-arrow"/></svg></a>
           </article>
-          <article class="step reveal delay-2">
-            <div class="step-number">03</div>
-            <h3>Recurso e Resultado</h3>
-            <p>Elaboramos o recurso com fundamentação sólida e acompanhamos até a decisão final — em todas as instâncias necessárias.</p>
+
+          <article class="care-card reveal delay-2">
+            <div class="care-icon"><svg><use href="#i-sunrise"/></svg></div>
+            <h3>Acompanhamento de Transições de Vida</h3>
+            <p>Momentos como perdas, mudanças ou reencontros consigo mesmo podem ser muito delicados. Oferecemos suporte combinado: reflexão psicológica e práticas holísticas, para que você atravesse essas fases com mais segurança, amparado pela energia de acolhimento representada pelos anjos.</p>
+            <a class="care-link" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20Acompanhamento%20de%20Transi%C3%A7%C3%B5es%20de%20Vida." target="_blank" rel="noopener">Conversar sobre isso <svg><use href="#i-arrow"/></svg></a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-navy">
-      <div class="container">
-        <div class="section-head reveal" style="margin-bottom:48px;">
-          <span class="eyebrow">NOSSOS NÚMEROS</span>
-          <h2>Resultados que comprovam nossa expertise</h2>
-        </div>
-        <div class="stats-row reveal">
-          <div class="stat-block">
-            <div class="stat-value" data-counter="3200">0</div>
-            <div class="stat-label">Recursos elaborados</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-value" data-counter="87" data-suffix="%">0%</div>
-            <div class="stat-label">Taxa de deferimento</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-value" data-counter="15" data-suffix=" dias">0 dias</div>
-            <div class="stat-label">Prazo médio de resposta</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="recursos" class="section section-alt">
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="stars" data-count="140" aria-hidden="true"></div>
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">TIPOS DE RECURSOS</span>
-          <h2>Atuamos em todas as instâncias recursais</h2>
-          <p>Do primeiro prazo de defesa até as instâncias superiores do sistema administrativo de trânsito.</p>
+          <span class="eyebrow eyebrow-light"><svg><use href="#i-sparkle"/></svg> Serviços</span>
+          <h2>Práticas para o seu <em>reencontro interior</em></h2>
+          <p>Escolha o caminho que mais toca o seu coração. Estamos aqui para acolher você em cada passo.</p>
         </div>
-        <div class="recursos-grid">
-          <div class="recurso-card reveal">
-            <div class="recurso-icon">📋</div>
-            <h3>Defesa Prévia de Autuação</h3>
-            <p>Primeira oportunidade de contestação, antes da multa se tornar definitiva.</p>
-          </div>
-          <div class="recurso-card reveal delay-1">
-            <div class="recurso-icon">⚖️</div>
-            <h3>Recurso à JARI</h3>
-            <p>Junta Administrativa de Recursos de Infrações — segunda instância do processo.</p>
-          </div>
-          <div class="recurso-card reveal delay-2">
-            <div class="recurso-icon">🏛️</div>
-            <h3>Recurso ao CETRAN / CONTRAN</h3>
-            <p>Instância recursal máxima, em nível estadual e federal.</p>
-          </div>
-          <div class="recurso-card reveal">
-            <div class="recurso-icon">🪪</div>
-            <h3>Defesa de Suspensão de CNH</h3>
-            <p>Recursos para evitar a suspensão do direito de dirigir por pontuação.</p>
-          </div>
-          <div class="recurso-card reveal delay-1">
-            <div class="recurso-icon">📷</div>
-            <h3>Radares e Lombadas Eletrônicas</h3>
-            <p>Verificação de validade, calibração e vícios na lavratura do auto.</p>
-          </div>
-          <div class="recurso-card reveal delay-2">
-            <div class="recurso-icon">🚛</div>
-            <h3>Frotas e Pessoa Jurídica</h3>
-            <p>Gestão e defesa de multas para empresas e transportadoras com alto volume.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="vantagens" class="section section-dark">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">VANTAGENS</span>
-          <h2>Por que escolher a EiMultas</h2>
-        </div>
-        <div class="cards">
-          <article class="card reveal">
-            <h3>Análise gratuita</h3>
-            <p>Avaliamos sua multa sem custo antes de qualquer compromisso. Você avança apenas se houver base legal sólida.</p>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-icon"><svg><use href="#i-stars"/></svg></div>
+            <h3>Consultas Espirituais e Psicanálise</h3>
+            <p>Encontros que unem a escuta psicanalítica à dimensão espiritual da sua história, para compreender emoções, padrões e caminhos com profundidade e acolhimento.</p>
+            <a class="btn btn-gold btn-sm" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20Consultas%20Espirituais%20e%20Psican%C3%A1lise." target="_blank" rel="noopener"><svg class="btn-icon"><use href="#i-whatsapp"/></svg> Quero saber mais</a>
           </article>
-          <article class="card reveal delay-1">
-            <h3>Controle de prazos</h3>
-            <p>Monitoramos todos os prazos recursais. Nenhuma oportunidade de defesa é perdida por atraso.</p>
+
+          <article class="service-card reveal delay-1">
+            <div class="service-icon"><svg><use href="#i-radionic"/></svg></div>
+            <h3>Mesas Radiônicas</h3>
+            <p>Prática holística integrativa que trabalha com a radiestesia para identificar e harmonizar padrões energéticos, favorecendo leveza, clareza e bem-estar.</p>
+            <a class="btn btn-gold btn-sm" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20Mesas%20Radi%C3%B4nicas." target="_blank" rel="noopener"><svg class="btn-icon"><use href="#i-whatsapp"/></svg> Quero saber mais</a>
           </article>
-          <article class="card reveal delay-2">
-            <h3>Fundamentação técnica</h3>
-            <p>Cada recurso é elaborado com base no CTB, resoluções do CONTRAN e jurisprudência administrativa.</p>
-          </article>
-          <article class="card reveal">
-            <h3>Especialistas no assunto</h3>
-            <p>Foco exclusivo em multas de trânsito. Profundidade que assessorias generalistas não alcançam.</p>
+
+          <article class="service-card reveal delay-2">
+            <div class="service-icon"><svg><use href="#i-infinity"/></svg></div>
+            <h3>Equilíbrio Energético</h3>
+            <p>Práticas que ajudam a aliviar tensões e a restabelecer a harmonia energética entre mente, corpo e alma, complementando o seu processo terapêutico.</p>
+            <a class="btn btn-gold btn-sm" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20Equil%C3%ADbrio%20Energ%C3%A9tico." target="_blank" rel="noopener"><svg class="btn-icon"><use href="#i-whatsapp"/></svg> Quero saber mais</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="compliance" class="section">
+    <!-- MENSAGEM DO DIA -->
+    <section class="section message" id="mensagem">
+      <div class="stars" data-count="60" aria-hidden="true"></div>
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">COMPROMISSO COM PRIVACIDADE</span>
-          <h2>Operação séria com base documental completa.</h2>
-          <p>Nosso site inclui Política de Privacidade, Termos de Uso e página LGPD, além de aviso de cookies e canal de contato para demandas de dados pessoais.</p>
-        </div>
-        <div class="cards">
-          <a href="pages/politica-de-privacidade.html" class="card card-link reveal">
-            <h3>Política de Privacidade</h3>
-            <p>Descreve como tratamos informações relacionadas ao uso deste site e aos canais de contato institucionais, com bases legais conforme a LGPD.</p>
-          </a>
-          <a href="pages/termos-de-uso.html" class="card card-link reveal delay-1">
-            <h3>Termos de Uso</h3>
-            <p>Estabelece as condições gerais para navegação e utilização do site, definindo responsabilidades e limitações aplicáveis.</p>
-          </a>
-          <a href="pages/lgpd.html" class="card card-link reveal delay-2">
-            <h3>Canal LGPD</h3>
-            <p>Titulares de dados podem encaminhar solicitações de acesso, correção ou esclarecimentos sobre o tratamento de informações pessoais.</p>
-          </a>
-          <a href="pages/politica-de-privacidade.html" class="card card-link reveal">
-            <h3>Cookies</h3>
-            <p>Utilizamos apenas cookies essenciais. O usuário pode gerenciá-los diretamente nas configurações do navegador.</p>
-          </a>
+        <div class="message-card reveal">
+          <div class="message-halo" aria-hidden="true"></div>
+          <span class="eyebrow"><svg><use href="#i-sparkle"/></svg> Um momento para você</span>
+          <h2>Uma mensagem de luz para o seu dia</h2>
+          <p class="message-intro">Respire fundo, pense no que o seu coração precisa ouvir hoje e toque no botão.</p>
+          <blockquote class="message-text" id="mensagem-texto" aria-live="polite">“Você não precisa ter todas as respostas hoje. Um passo de cada vez também é caminho.”</blockquote>
+          <button class="btn btn-gold btn-lg" id="mensagem-btn" type="button"><svg class="btn-icon"><use href="#i-sparkle"/></svg> Receber uma mensagem</button>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section section-alt">
+    <!-- COMO FUNCIONA -->
+    <section class="section journey" id="como-funciona">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">DÚVIDAS FREQUENTES</span>
-          <h2>Perguntas que todo motorista faz</h2>
+          <span class="eyebrow"><svg><use href="#i-sparkle"/></svg> Sua jornada</span>
+          <h2>Como <em>funciona</em></h2>
+          <p>Um caminho simples e acolhedor, no seu tempo.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <h3>Primeiro contato</h3>
+            <p>Você nos chama pelo WhatsApp quando se sentir pronto. Tiramos suas dúvidas e combinamos o melhor horário para você.</p>
+          </li>
+          <li class="step reveal delay-1">
+            <span class="step-num">2</span>
+            <h3>Acolhimento e escuta</h3>
+            <p>Conversamos sobre o seu momento, o que você sente e o que procura, sem julgamentos e respeitando o seu ritmo.</p>
+          </li>
+          <li class="step reveal delay-2">
+            <span class="step-num">3</span>
+            <h3>Caminho personalizado</h3>
+            <p>Juntos, definimos o cuidado mais adequado: psicoterapia, práticas holísticas ou a combinação das duas.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS -->
+    <section class="section faq" id="duvidas">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><svg><use href="#i-sparkle"/></svg> Dúvidas frequentes</span>
+          <h2>Perguntas que chegam <em>até nós</em></h2>
         </div>
         <div class="faq-list reveal">
-          <div class="faq-item">
-            <button class="faq-btn">Vale a pena recorrer de uma multa de trânsito?<span class="faq-arrow">▼</span></button>
-            <div class="faq-body"><p>Na maioria dos casos, sim. Muitas multas possuem vícios formais, erros de medição ou falhas processuais que podem resultar em cancelamento. A análise gratuita da EiMultas permite avaliar as chances reais antes de qualquer decisão.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn">Qual é o prazo para entrar com recurso?<span class="faq-arrow">▼</span></button>
-            <div class="faq-body"><p>A defesa prévia deve ser apresentada em até 30 dias da notificação da autuação. O recurso à JARI pode ser interposto em até 30 dias da notificação da penalidade. Entre em contato com a EiMultas assim que receber a notificação.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn">O recurso suspende a penalidade?<span class="faq-arrow">▼</span></button>
-            <div class="faq-body"><p>Sim. A interposição de recurso administrativo suspende a exigibilidade da multa e a aplicação dos pontos na CNH até o julgamento final — evitando a suspensão do direito de dirigir durante o processo.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn">Posso recorrer de multas de outros estados?<span class="faq-arrow">▼</span></button>
-            <div class="faq-body"><p>Sim. Atendemos infrações registradas em qualquer estado brasileiro. O processo recursal segue o CTB, lei federal, portanto os procedimentos são semelhantes em todo o país.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn">Como funciona o atendimento para frotas?<span class="faq-arrow">▼</span></button>
-            <div class="faq-body"><p>Para empresas e frotas oferecemos gestão de recursos com triagem em lote, controle de prazos e relatórios periódicos. Entre em contato para uma proposta personalizada.</p></div>
-          </div>
+          <details class="faq-item" name="faq">
+            <summary>O Portal Anjo-Cura é um espaço religioso?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Não. Não trabalhamos com ritos religiosos. Os anjos são, para nós, um símbolo de proteção, orientação e esperança: a energia de acolhimento que inspira uma escuta sem julgamento e o respeito ao seu ritmo. Você é bem-vindo, qualquer que seja a sua crença.</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>Para quem é indicado o acompanhamento?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Para quem atravessa momentos de ansiedade, dor, confusão ou busca por sentido, e também para quem vive transições como perdas, mudanças ou reencontros consigo mesmo. Se você sente que precisa de um espaço seguro para ser ouvido, este espaço é para você.</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>As terapias holísticas substituem a psicoterapia ou o tratamento médico?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Não. As práticas holísticas complementam o trabalho psicoterapêutico, buscando a harmonia integral da pessoa. Elas não substituem acompanhamento médico ou psiquiátrico: se você faz algum tratamento, mantenha-o e conte para nós.</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>O que são as Mesas Radiônicas?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>São uma prática integrativa que utiliza ferramentas de radiestesia para trabalhar padrões energéticos, com o objetivo de trazer mais equilíbrio, leveza e clareza. No Portal Anjo-Cura, elas são oferecidas como complemento ao cuidado com a mente, o corpo e a alma.</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>Como faço para agendar?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>É só nos chamar pelo WhatsApp <a href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20atendimento%20no%20Portal%20Anjo-Cura." target="_blank" rel="noopener">(49) 92008-6541</a>. Vamos tirar suas dúvidas, explicar como funcionam os atendimentos e encontrar o melhor horário para você.</p></div>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="cta-final">
-      <div class="container" style="position:relative;z-index:1;">
-        <span class="eyebrow">ANÁLISE GRATUITA — SEM COMPROMISSO</span>
-        <h2>Não pague uma multa que pode ser cancelada.</h2>
-        <p>Em poucos minutos você sabe se vale a pena recorrer. Nossa análise é gratuita.</p>
-        <div class="cta-final-actions">
-          <a class="btn btn-primary" href="https://wa.me/554935181609?text=Olá%2C+quero+analisar+minha+multa+gratuitamente." target="_blank" rel="noopener">
-            Falar no WhatsApp
-          </a>
-          <a class="btn btn-secondary" href="tel:+554935181609">(49) 3518-1609</a>
+    <!-- CHAMADA FINAL -->
+    <section class="cta" id="contato">
+      <div class="sky-rays sky-rays-center" aria-hidden="true"></div>
+      <div class="container cta-inner reveal">
+        <div class="cta-avatar" aria-hidden="true">
+          <span class="avatar avatar-lg"><img src="assets/anjo-avatar.jpg" alt="" width="160" height="160" loading="lazy" /></span>
+          <span class="cta-ring"></span>
         </div>
-        <br/>
-        <a class="cta-phone" href="tel:+554935181609">📞 +55 49 3518-1609 — Atendimento direto</a>
+        <span class="eyebrow"><svg><use href="#i-sparkle"/></svg> Estamos aqui por você</span>
+        <h2>Sua luz interior pode ser <em>reencontrada.</em></h2>
+        <p>Dê o primeiro passo no seu tempo. Converse com a gente pelo WhatsApp e descubra o cuidado ideal para o seu momento.</p>
+        <div class="cta-actions">
+          <a class="btn btn-wa btn-lg" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Portal%20Anjo-Cura%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">
+            <svg class="btn-icon"><use href="#i-whatsapp"/></svg> Conversar pelo WhatsApp
+          </a>
+        </div>
+        <p class="cta-phone">WhatsApp: <strong>(49) 92008-6541</strong></p>
+      </div>
+      <div class="clouds" aria-hidden="true">
+        <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+        <span class="cloud c4"></span><span class="cloud c5"></span><span class="cloud c6"></span>
+        <span class="cloud c7"></span>
       </div>
     </section>
 
@@ -548,71 +375,45 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio">
+          <span class="avatar avatar-sm"><img src="assets/anjo-avatar.jpg" alt="" width="52" height="52" loading="lazy" /></span>
+          <span class="brand-text"><strong>Portal Anjo-Cura</strong><small>Psicoterapia · Terapias Holísticas</small></span>
+        </a>
+        <p>Acolhimento psicoterapêutico e equilíbrio holístico sob a luz dos anjos.</p>
+      </div>
       <div>
-        <img class="footer-logo" src="assets/logo.png" alt="EiMultas" />
-        <p>Especialistas em recursos de multas de trânsito.</p>
-        <p class="small-note">A EiMultas respeita a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018).</p>
+        <h4>Navegue</h4>
+        <ul class="footer-links">
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#atendimentos">Atendimentos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#mensagem">Mensagem do dia</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
       </div>
       <div>
         <h4>Contato</h4>
-        <p><a href="tel:+554935181609">📞 (49) 3518-1609</a></p>
-        <p><a href="https://wa.me/554935181609" target="_blank" rel="noopener">💬 WhatsApp</a></p>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Portal%20Anjo-Cura%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><svg class="footer-wa"><use href="#i-whatsapp"/></svg> (49) 92008-6541</a></li>
+          <li><a href="https://www.portalanjocura.com.br/">www.portalanjocura.com.br</a></li>
+        </ul>
       </div>
-      <div>
-        <h4>Institucional</h4>
-        <p><a href="pages/politica-de-privacidade.html">Política de Privacidade</a></p>
-        <p><a href="pages/termos-de-uso.html">Termos de Uso</a></p>
-        <p><a href="pages/lgpd.html">Canal LGPD</a></p>
+      <div class="footer-note">
+        <h4>Cuidado importante</h4>
+        <p>As terapias holísticas são práticas complementares e não substituem acompanhamento médico ou psiquiátrico. Em caso de crise ou emergência, procure o serviço de saúde mais próximo, ligue 192 (SAMU) ou 188 (CVV, apoio emocional gratuito 24 horas).</p>
       </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="ano">2026</span> Portal Anjo-Cura. Todos os direitos reservados.</p>
+      <p class="footer-sparkle"><svg><use href="#i-sparkle"/></svg> Que a luz guie seus passos.</p>
     </div>
   </footer>
 
-  <div id="cookie-banner" class="cookie-banner" hidden>
-    <div class="cookie-content">
-      <div>
-        <strong>Privacidade e cookies</strong>
-        <p>Utilizamos cookies essenciais para melhorar a navegação. Ao continuar, você concorda conforme nossa <a href="pages/politica-de-privacidade.html">Política de Privacidade</a>.</p>
-      </div>
-      <div class="cookie-actions">
-        <a class="btn btn-secondary btn-small" href="pages/politica-de-privacidade.html">Ler política</a>
-        <button id="cookie-accept" class="btn btn-primary btn-small" type="button">Aceitar</button>
-      </div>
-    </div>
-  </div>
-
-  <a class="whatsapp-float" href="https://wa.me/554935181609?text=Olá%2C+quero+falar+com+a+EiMultas." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-    💬 WhatsApp
+  <a class="wa-float" href="https://wa.me/5549920086541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Portal%20Anjo-Cura%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+    <svg><use href="#i-whatsapp"/></svg><span>WhatsApp</span>
   </a>
 
   <script src="script.js"></script>
-  <script>
-    document.querySelectorAll('.faq-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!isOpen) item.classList.add('open');
-      });
-    });
-    const counters = document.querySelectorAll('.stat-value[data-counter]');
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (!e.isIntersecting) return;
-        const el = e.target;
-        const target = +el.dataset.counter;
-        const suffix = el.dataset.suffix || '';
-        const dur = 1600;
-        const start = performance.now();
-        const tick = now => {
-          const t = Math.min((now - start) / dur, 1);
-          el.textContent = Math.floor((1 - Math.pow(1-t, 3)) * target).toLocaleString('pt-BR') + suffix;
-          if (t < 1) requestAnimationFrame(tick);
-        };
-        requestAnimationFrame(tick);
-        obs.unobserve(el);
-      });
-    }, { threshold: 0.4 });
-    counters.forEach(el => obs.observe(el));
-  </script>
 </body>
 </html>
